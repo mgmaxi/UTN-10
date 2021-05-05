@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datos</title>
+    <%- include ('partials/head.html') %>
+</head>
+<body>
+    <!-- NAV -->
+    <%- include ('partials/navigation.html')%>
+
+    <!-- Visualización de Datos del Formulario Enviado -->
+    <div class="container">
+        <div class="dataFormCard text-center shadow-lg p-3 mb-5 bg-dark text-white rounded animate__animated animate__flipInY">
+            <p> Nombre: <%= firstName %>
+            </p>
+            <p> Apellido: <%= lastName %>
+            </p>
+            <p> Edad: <%= age %>
+            </p>
+            <p> Teléfono: <%= celphone %>
+            </p>
+            <p> País de Nacimiento: <%= countryBirth %>
+            </p>
+            <p> País de Residencia: <%= countryResidence %>
+            </p>
+            <div class="btn-Flex">
+                <div>
+                    <a class="nav-link active" aria-current="page" href="/"> <i class="fas fa-home"></i> Home</a>
+                </div>
+                <div>
+                    <a class="nav-link" href="/form"><i class="fab fa-wpforms"></i> Form</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <%- include ('partials/footer.html') %>
+</body>
+</html>

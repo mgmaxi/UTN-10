@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <%- include ('partials/head.html') %>
+</head>
+<body>
+    <%- include ('partials/navigation.html')%>
+        <div class="container">
+            <div class="containerForm animate__animated animate__flipInY">
+                <div><img src="./img/textForm.png" alt=""></div>
+                <form action="/contact" method="POST">
+                    <div class="mb-3 containerSubForm">
+                        <label for="firstName" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="firstName" name="firstName"
+                            placeholder="Ingrese su nombre" required>
+                    </div>
+                    <div class="mb-3 containerSubForm">
+                        <label for="lastName" class="form-label">Apellido</label>
+                        <input type="text" class="form-control" id="lastName" name="lastName"
+                            placeholder="Ingrese su apellido" required>
+                    </div>
+                    <div class="mb-3 containerSubForm">
+                        <label for="age" class="form-label">Edad</label>
+                        <input type="number" class="form-control" id="age" name="age" min="18" max="200" maxlength="3"
+                            placeholder="Ingrese su edad" required>
+                    </div>
+                    <div class="mb-3 containerSubForm">
+                        <label for="celphone" class="form-label">Número de celular</label>
+                        <input type="tel" class="form-control" id="celphone" name="celphone" minlength="6"
+                            maxlength="25" placeholder="Ingrese su número de celular" required>
+                    </div>
+                    <div class="mb-3 containerSubForm">
+                        <label for="countryBirth" class="form-label">País de nacimiento</label>
+                        <select class="form-select" id="countryBirth" name="countryBirth" required>
+                            <option value="Argentina">Argentina</option>
+                            <option value="España">España</option>
+                            <option value="México">México</option>
+                            <option value="Guatemala">Guatemala</option>
+                            <option value="Honduras">Honduras</option>
+                            <option value="El Salvador">El Salvador</option>
+                            <option value="Venezuela">Venezuela</option>
+                            <option value="Colombia">Colombia</option>
+                            <option value="Cuba">Cuba</option>
+                            <option value="Bolivia">Bolivia</option>
+                            <option value="Ecuador">Ecuador</option>
+                            <option value="Uruguay">Uruguay</option>
+                        </select>
+                    </div>
+                    <div class="mb-3 containerSubForm">
+                        <label for="countryResidence" class="form-label">País de residencia</label>
+                        <select class="form-select" id="countryResidence" name="countryResidence" required>
+                            <option value="Argentina">Argentina</option>
+                            <option value="España">España</option>
+                            <option value="México">México</option>
+                            <option value="Guatemala">Guatemala</option>
+                            <option value="Honduras">Honduras</option>
+                            <option value="El Salvador">El Salvador</option>
+                            <option value="Venezuela">Venezuela</option>
+                            <option value="Colombia">Colombia</option>
+                            <option value="Cuba">Cuba</option>
+                            <option value="Bolivia">Bolivia</option>
+                            <option value="Ecuador">Ecuador</option>
+                            <option value="Uruguay">Uruguay</option>
+                        </select>
+                    </div>
+                    <div class="container-btnForm">
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <%- include ('partials/footer.html') %>
+</body>
+</html>
