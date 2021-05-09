@@ -10,9 +10,9 @@
 <body>
     <%- include ('partials/navigation.html')%>
         <div class="container">
-            <div class="containerForm animate__animated animate__flipInY">
+            <div class="col-12 containerForm animate__animated animate__flipInY">
                 <div><img src="./img/textForm.png" alt=""></div>
-                <form action="/contact" method="POST">
+                <form action="/contact" method="POST" class="col-12 col-md-6">
                     <div class="mb-3 containerSubForm">
                         <label for="firstName" class="form-label">Nombre</label>
                         <input type="text" class="form-control" id="firstName" name="firstName"
@@ -68,7 +68,7 @@
                         </select>
                     </div>
                     <div class="container-btnForm">
-                        <button type="submit" class="btn btn-primary">Enviar</button>
+                        <button type="submit" class="btn btn-primary col-12">Enviar</button>
                     </div>
                 </form>
             </div>
